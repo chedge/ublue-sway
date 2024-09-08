@@ -21,6 +21,7 @@
 				"libxcrypt-compat",
 				"lm_sensors",
 				"make",
+				"mosh",
 				"mesa-libGLU",
 				"nerd-fonts",
 				"opendyslexic-fonts",

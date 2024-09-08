@@ -17,9 +17,7 @@ RELEASE="$(rpm -E %fedora)"
 /tmp/copr-repos.sh
 /tmp/packages.sh
 
-# this would install a package from rpmfusion
-# rpm-ostree install vlc
-
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket
+#systemctl enable podman.socket
+systemctl enable tailscaled
