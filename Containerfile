@@ -15,7 +15,7 @@
 # - "base"
 #
 #  "aurora", "bazzite", "bluefin" or "ucore" may also be used but have different suffixes.
-ARG SOURCE_IMAGE="silverblue"
+ARG SOURCE_IMAGE="sericea"
 
 ## SOURCE_SUFFIX arg should include a hyphen and the appropriate suffix name
 # These examples all work for silverblue/kinoite/sericea/onyx/lazurite/vauxite/base
@@ -38,17 +38,19 @@ ARG SOURCE_SUFFIX="-main"
 ## SOURCE_TAG arg must be a version built for the specific image: eg, 39, 40, gts, latest
 ARG SOURCE_TAG="latest"
 
-
 ### 2. SOURCE IMAGE
 ## this is a standard Containerfile FROM using the build ARGs above to select the right upstream image
 FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 
+ARG BASE_IMAGE_NAME="sericea"
+ARG FEDORA_MAJOR_VERSION="40"
+#ARG IMAGE_FLAVOR="main
 
 ### 3. MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
-COPY build.sh /tmp/build.sh
+COPY build.sh copr-repos.sh packages.sh packages.json /tmp/
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
