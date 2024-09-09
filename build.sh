@@ -16,6 +16,7 @@ RELEASE="$(rpm -E %fedora)"
 #rpm-ostree install screen
 /tmp/copr-repos.sh
 /tmp/packages.sh
+ls /tmp/installers/install-*
 /tmp/installers/install-*
 
 #### Example for enabling a System Unit File
