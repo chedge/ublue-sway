@@ -51,6 +51,8 @@ ARG FEDORA_MAJOR_VERSION="40"
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 COPY build.sh copr-repos.sh packages.sh packages.json /tmp/
+COPY installers /tmp/installers
+COPY etc/ /etc/
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
