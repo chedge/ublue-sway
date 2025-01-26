@@ -4,6 +4,7 @@
 			"all": [
 				"alacritty",
 				"bcache-tools",
+				"borgbackup",
 				"bootc",
 				"evtest",
 				"epson-inkjet-printer-escpr",
