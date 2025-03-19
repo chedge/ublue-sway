@@ -15,6 +15,7 @@
 				"foo2zjs",
 				"fuse-encfs",
 				"gcc",
+				"ghostty",
 				"hplip",
 				"krb5-workstation",
 				"ifuse",
@@ -46,6 +47,7 @@
 				"wireguard-tools",
 				"xprop",
 				"wl-clipboard",
+				"zathura",
 				"zsh"
 			],
 			"dx": [
