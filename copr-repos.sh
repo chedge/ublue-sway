@@ -43,7 +43,7 @@ dnf5 -y copr enable hikariknight/looking-glass-kvmfr
 dnf5 -y copr enable gmaglione/podman-bootc
 
 # ghostty
-dnf5 -y copr enable pgdev/ghostty
+dnf5 -y copr enable scottames/ghostty
 
 # Renenable RPMFusion
 #sed -i '0,/enabled=0/s//enabled=1/' /etc/yum.repos.d/rpmfusion-{,non}free.repo
