@@ -8,10 +8,6 @@ dnf5 -y copr enable ublue-os/staging
 # Add Bling repo
 dnf5 -y copr enable ublue-os/bling
 
-# Patched switcheroo
-# Add repo
-dnf5 -y copr enable sentry/switcheroo-control
-
 # Add Nerd Fonts
 dnf5 -y copr enable che/nerd-fonts
 
