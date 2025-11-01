@@ -10,14 +10,7 @@ dnf5 -y copr enable ublue-os/bling
 
 # Patched switcheroo
 # Add repo
-dnf5 -y copr enable sentry/switcheroo-control_discrete
-
-# Switcheroo patch
-dnf5 -y swap \
-    --repo=copr:copr.fedorainfracloud.org:sentry:switcheroo-control_discrete \
-        switcheroo-control switcheroo-control
-
-dnf5 -y copr remove sentry/switcheroo-control_discrete
+dnf5 -y copr enable sentry/switcheroo-control
 
 # Add Nerd Fonts
 dnf5 -y copr enable che/nerd-fonts

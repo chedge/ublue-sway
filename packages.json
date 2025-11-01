@@ -89,6 +89,7 @@
 				"rocm-hip",
 				"rocm-opencl",
 				"rocm-smi",
+				"switcheroo-control",
 				"ubuntu-family-fonts",
 				"udica",
 				"umoci",
