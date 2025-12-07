@@ -41,7 +41,7 @@ ARG SOURCE_TAG="latest"
 ### 2. SOURCE IMAGE
 ## this is a standard Containerfile FROM using the build ARGs above to select the right upstream image
 #FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
-FROM quay.io/fedora-ostree-desktops/sway-atomic:latest
+FROM quay.io/fedora-ostree-desktops/sway-atomic:43
 
 ARG BASE_IMAGE_NAME="sericea"
 ARG FEDORA_MAJOR_VERSION="41"
