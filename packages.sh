@@ -4,6 +4,7 @@ set -ouex pipefail
 
 # build list of all packages requested for inclusion
 INCLUDED_PACKAGES=($(jq -r "[(.all.include | (select(.all != null).all)[]), \
+                    (.all.include | (select(.all != null).ublueSway)[]), \
                     (.all.include | (select(.\"$BASE_IMAGE_NAME\" != null).\"$BASE_IMAGE_NAME\")[]), \
                     (select(.\"$FEDORA_MAJOR_VERSION\" != null).\"$FEDORA_MAJOR_VERSION\".include | (select(.all != null).all)[]), \
                     (select(.\"$FEDORA_MAJOR_VERSION\" != null).\"$FEDORA_MAJOR_VERSION\".include | (select(.\"$BASE_IMAGE_NAME\" != null).\"$BASE_IMAGE_NAME\")[])] \
