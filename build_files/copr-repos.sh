@@ -2,9 +2,6 @@
 
 set -ouex pipefail
 
-# Add Staging repo
-dnf5 -y copr enable ublue-os/staging
-
 # Add Bling repo
 dnf5 -y copr enable ublue-os/bling
 
