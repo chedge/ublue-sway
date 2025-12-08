@@ -63,7 +63,7 @@
                 "yubikey-manager",
                 "zstd"
             ],
-			"ublueSway": [
+			"ublue-sway": [
 				"alacritty",
 				"bcache-tools",
 				"borgbackup",
