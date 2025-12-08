@@ -16,6 +16,9 @@ FROM ghcr.io/ublue-os/akmods:main-${FEDORA_MAJOR_VERSION} AS akmods
 
 FROM quay.io/fedora-ostree-desktops/sway-atomic:${FEDORA_MAJOR_VERSION}
 
+ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-43}"
+ARG IMAGE_NAME="ublue-sway"
+
 RUN --mount=type=bind,from=ctx,src=/,dst=/ctx \
     --mount=type=cache,target=/var/cache \
     --mount=type=cache,target=/var/log \
