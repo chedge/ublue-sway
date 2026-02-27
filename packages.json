@@ -79,6 +79,7 @@
 				"ifuse",
 				"input-leap",
 				"input-remapper",
+				"libvirt",
 				"libxcrypt-compat",
 				"lm_sensors",
 				"make",
