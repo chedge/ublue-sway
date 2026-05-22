@@ -111,6 +111,7 @@
 				"tumbler",
 				"virtiofsd",
 				"zathura",
+				"zathura-plugins-all",
 				"zsh"
 			],
 			"dx": [
