@@ -4,7 +4,7 @@
 # Build args can be provided on the commandline when building locally with:
 #   podman build -f Containerfile --build-arg FEDORA_VERSION=40 -t local-image
 
-ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-43}"
+ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-44}"
 ARG IMAGE_NAME="ublue-sway"
 
 FROM scratch AS ctx
@@ -16,7 +16,7 @@ FROM ghcr.io/ublue-os/akmods:main-${FEDORA_MAJOR_VERSION} AS akmods
 
 FROM quay.io/fedora-ostree-desktops/sway-atomic:${FEDORA_MAJOR_VERSION}
 
-ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-43}"
+ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-44}"
 ARG IMAGE_NAME="ublue-sway"
 
 RUN --mount=type=bind,from=ctx,src=/,dst=/ctx \
